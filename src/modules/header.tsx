@@ -7,6 +7,8 @@ import {
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
+    Box,
+    Spacer,
 } from "@chakra-ui/react"
 import { useDisclosure, IconButton, Input, Button, useColorMode } from "@chakra-ui/react"
 import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons"
@@ -28,7 +30,8 @@ function DrawerExample() {
     const { colorMode, toggleColorMode } = useColorMode()
 
     return (
-        <>
+        <Box width="100%" display="flex" alignItems="end" justifyContent="space-between" p="5">
+        <Spacer />
             <Button
                 as={IconButton}
                 aria-label="Options"
@@ -36,13 +39,6 @@ function DrawerExample() {
                 variant="outline"
                 ref={btnRef}
                 onClick={onOpen}
-            />
-            <Button
-                as={IconButton}
-                aria-label="toggle dark mode"
-                icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-                ref={toggleRef}
-                onClick={toggleColorMode}
             />
             <Drawer
                 isOpen={isOpen}
@@ -53,21 +49,23 @@ function DrawerExample() {
                 <DrawerOverlay />
                 <DrawerContent>
                     <DrawerCloseButton />
-                    <DrawerHeader>Create your account</DrawerHeader>
-
+                    <DrawerHeader>Menu</DrawerHeader>
                     <DrawerBody>
                         <Input placeholder="Type here..." />
                     </DrawerBody>
 
-                    <DrawerFooter>
-                        <Button variant="outline" mr={3} onClick={onClose}>
-                            Cancel
-                        </Button>
-                        <Button colorScheme="blue">Save</Button>
+                    <DrawerFooter display="flex" alignItems="center" justifyContent="space-between">
+                        <Button
+                            as={IconButton}
+                            aria-label="toggle dark mode"
+                            icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                            ref={toggleRef}
+                            onClick={toggleColorMode}
+                        />
                     </DrawerFooter>
                 </DrawerContent>
             </Drawer>
-        </>
+        </Box>
     )
 }
 

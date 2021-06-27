@@ -1,9 +1,9 @@
 {
-  "name": "bartu.me",
+  "name": "bartu-portfolio",
   "version": "1.0.0",
   "private": true,
-  "description": "Bartu.me",
-  "author": "Bartu",
+  "description": "A portfolio website made using Gatsby and Chakra UI",
+  "author": "@Chogster | Bartu Bazna",
   "keywords": [
     "gatsby"
   ],
@@ -25,8 +25,10 @@
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
     "autoprefixer": "^10.2.6",
+    "css.gg": "^2.0.0",
     "framer-motion": "^4.1.17",
     "gatsby": "^3.6.2",
+    "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^1.7.1",
     "gatsby-plugin-manifest": "^3.7.1",
     "gatsby-plugin-mdx": "^2.7.1",
@@ -41,6 +43,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.35.0"
+    "sass": "^1.35.0",
+    "styled-components": "^5.3.0"
   }
 }

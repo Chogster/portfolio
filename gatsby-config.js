@@ -1,6 +1,47 @@
 module.exports = {
   siteMetadata: {
     title: "Bartu.me",
+    menuLinks: [
+      {
+        language: "en",
+        links: [
+          {
+            name: "About",
+            link: "/"
+          },
+          {
+            name: "Contact",
+            link: "/contact"
+          }
+        ]
+      },
+      {
+        language: "de",
+        links: [
+          {
+            name: "Über mich",
+            link: "/de/"
+          },
+          {
+            name: "Kontakt",
+            link: "/de/contact"
+          }
+        ]
+      },
+      {
+        language: "tr",
+        links: [
+          {
+            name: "Hakkimda",
+            link: "/tr/"
+          },
+          {
+            name: "Iletisim",
+            link: "/tr/contact"
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -47,5 +88,13 @@ module.exports = {
         isUsingColorMode: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {        
+        langKeyDefault: 'en',
+        langKeyForNull: 'en',
+        useLangKeyLayout: false
+      }
+    }
   ],
 };
