@@ -9,9 +9,11 @@ import theme from './chakra.config';
 // Wraps every page in a component
 export const wrapPageElement = ({ element, props }) => {
   // Change language according to pageContext.lang props, this gets passed down from gatsby-node.js
-  setTimeout(() => {
-    i18n.changeLanguage(props.pageContext.lang);
-  }, 100);
+  if (props.pageContext.lang !== i18n.language) {
+    setTimeout(() => {
+      i18n.changeLanguage(props.pageContext.lang);
+    }, 100);
+  }
   return (
       <ChakraProvider theme={theme}>
         <ColorModeProvider options={theme.config} />
