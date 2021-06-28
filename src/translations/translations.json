@@ -1,0 +1,62 @@
+{
+    "en": {
+      "translation": {
+        "siteMetadata": {
+          "title": "EN - Bartu.me | Portfolio",
+          "menuLinks": {
+            "links": [
+                {
+                  "name": "About",
+                  "link": "/en"
+                },
+                {
+                  "name": "Contact",
+                  "link": "/en/contact"
+                }
+              ]
+          }
+        },
+        "language": "Language" 
+      }
+    },  
+    "de": {
+      "translation": {
+        "siteMetadata": {
+          "title": "DE - Bartu.me | Portfolio",
+          "menuLinks": {
+            "links": [
+                {
+                  "name": "Über mich",
+                  "link": "/de/"
+                },
+                {
+                  "name": "Kontakt",
+                  "link": "/de/contact"
+                }
+              ]
+          }
+        },
+        "language": "Sprache" 
+      }
+    },
+    "tr": {
+        "translation": {
+          "siteMetadata": {
+            "title": "TR - Bartu.me | Portfolio",
+            "menuLinks": {
+              "links": [
+                  {
+                    "name": "Hakkimda",
+                    "link": "/tr/"
+                  },
+                  {
+                    "name": "Iletisim",
+                    "link": "/tr/contact"
+                  }
+                ]
+            }
+          },
+          "language": "Dil" 
+        }
+      }
+  }

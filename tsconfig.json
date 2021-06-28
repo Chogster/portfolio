@@ -11,7 +11,8 @@
     "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "removeComments": false
+    "removeComments": false,
+    "resolveJsonModule": true
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*", "gatsby-browser.ts"]
 }

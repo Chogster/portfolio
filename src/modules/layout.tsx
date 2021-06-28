@@ -10,22 +10,34 @@ import {
     Box,
     Spacer,
     Center,
+    Menu,
+    MenuButton,
+    MenuItem,
+    MenuList,
 } from "@chakra-ui/react"
-import { useDisclosure, IconButton, Input, Button, useColorMode } from "@chakra-ui/react"
-import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons"
+import { useDisclosure, IconButton, Button, useColorMode } from "@chakra-ui/react"
+import { ChevronDownIcon, HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons"
 import {MutableRefObject} from "react";
 import { Coffee } from "css.gg/icons/tsx/Coffee"
 import { Heart } from "css.gg/icons/tsx/Heart"
 import { CSSProperties } from "react";
 import Navlinks from "./navlinks";
+import { PageContext } from "../types/pagecontext";
+import { useStaticQuery, graphql, navigate } from "gatsby";
+import { useTranslation } from "react-i18next";
 
 interface Props {
     location?: Location
     title?: string
-    children?: any
-  }
+    children?: any,
+    pageContext: PageContext
+}
 
-const Layout = ( {children}: Props) => {
+interface QueryResponse {
+    supportedLanguages: string[]
+}
+
+const Layout = ( {children, pageContext}: Props) => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef: MutableRefObject<any> = React.useRef()
     const toggleRef: MutableRefObject<any> = React.useRef()
@@ -33,6 +45,8 @@ const Layout = ( {children}: Props) => {
     const heartStyle: CSSProperties = {
         color: "red"
     }
+    const { supportedLanguages } = getSupportedLanguages();
+    const { t } = useTranslation();
 
     return (
         <>
@@ -58,19 +72,35 @@ const Layout = ( {children}: Props) => {
                         <DrawerHeader>Menu</DrawerHeader>
                         <DrawerBody>
                             {/* <Input placeholder="Type here..." /> */}
-                            <Navlinks />
+                            <Navlinks pageContext={pageContext} />
                         </DrawerBody>
 
-                        <DrawerFooter display="flex" alignItems="center" justifyContent="space-between">
-                            <Spacer />
+                        <DrawerFooter display="flex" alignItems="center" justifyContent="space-around">
                             <Button
                                 as={IconButton}
                                 aria-label="toggle dark mode"
                                 icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
                                 ref={toggleRef}
-                                onClick={toggleColorMode}
+                                onClick={() => toggleColorMode()}
                             />
-                            <Spacer />
+                            <Menu>
+                                {({ isOpen }) => (
+                                    <>
+                                    <MenuList>
+                                    {
+                                        supportedLanguages.map((obj) => {
+                                            return (
+                                                <MenuItem onClick={() => changeLanguageAndGoToAddress(pageContext.originalPath, obj)} key={obj}>{obj.toUpperCase()}</MenuItem>
+                                            )
+                                        })
+                                    }
+                                    </MenuList>
+                                    <MenuButton isActive={isOpen} as={Button} rightIcon={<ChevronDownIcon />}>
+                                        {t('language')}
+                                    </MenuButton>
+                                    </>
+                                )}
+                            </Menu>
                         </DrawerFooter>
                     </DrawerContent>
                 </Drawer>
@@ -88,6 +118,27 @@ const Layout = ( {children}: Props) => {
             </Box>
         </>
     );
+}
+
+/**
+ * Get supported languages that are listed in gatsby-config.js
+ * @returns QueryResponse
+ */
+const getSupportedLanguages = (): QueryResponse => {
+    const { site } = useStaticQuery(graphql `
+    query MyQuery {
+        site {
+          siteMetadata {
+            supportedLanguages
+          }
+        }
+      }
+      `);
+      return site.siteMetadata;
+}
+
+const changeLanguageAndGoToAddress = (originalPath: string, lang: string) => {
+    navigate("/"+lang+originalPath)
 }
 
 export default Layout;

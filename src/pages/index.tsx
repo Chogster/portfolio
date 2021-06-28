@@ -1,12 +1,13 @@
 import * as React from "react"
-import Layout from "../modules/layout";
+import { useTranslation } from "react-i18next";
 
 // markup
 const IndexPage = () => {
+  const { t } = useTranslation();
   return (
-      <Layout>
-        This is the index page, hello!
-      </Layout>
+    <>
+      <h2>{t("siteMetadata.title")}</h2>
+    </>
   )
 }
 

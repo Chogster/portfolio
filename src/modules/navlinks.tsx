@@ -1,71 +1,35 @@
 import { List, ListItem } from "@chakra-ui/react";
-import { useStaticQuery } from "gatsby";
-import { graphql, Link } from "gatsby";
+import { Link } from "gatsby";
 import * as React from "react";
-
-interface Navlink {
-    language: string,
-    links: Linkdetails[]
-}
+import i18n from "../translations/i18next";
+import { PageContext } from "../types/pagecontext";
 
 interface Linkdetails {
     name: string,
     link: string
 }
 
-interface QueryResponse {
-    siteMetadata: {
-        title?: string,
-        description?: string,
-        menuLinks?: Navlink[]
-    }
+interface Props {
+    pageContext: PageContext
 }
 
-const Navlinks = () => {
-    const query = getSiteLinks();
-    let links: Array<Navlink> = [];
-    if (Array.isArray(query.siteMetadata.menuLinks)) {
-        links = query.siteMetadata.menuLinks;
-    }
-    console.log(links)
+const Navlinks = ({pageContext}: Props) => {
+    const { lang } = pageContext;
+    const resource = i18n.getResource(lang ? lang : "en", "translation", "siteMetadata.menuLinks");
+    const links: Linkdetails[] = resource.links;
     return (
-        <div>
-            {
-                links.map((obj, i) => {
-                    return (
-                        obj.links.map((details, j) => {
-                            return (
-                                <List spacing={3}>
-                                    <ListItem>
-                                        <Link key={''+i+j} to={details.link}>{details.name}</Link>
-                                    </ListItem>
-                                </List>
-                            )
-                        })
-                    )
-                })
-            }
-        </div>
+            <List spacing={3}>
+                {
+                    links.map((obj, i) => {
+                        return (
+                            <ListItem key={lang+obj.name+i+"li"}>
+                                <Link key={lang+obj.name+i+"link"} to={obj.link}>{obj.name}</Link>
+                            </ListItem>
+                        )
+                    })
+                }
+            </List>
     )
-}
-
-const getSiteLinks = (): QueryResponse => {
-    const { site } = useStaticQuery(graphql `
-    query MyQuery {
-        site {
-          siteMetadata {
-            menuLinks {
-              language
-              links {
-                name
-                link
-              }
-            }
-          }
-        }
-      }
-      `);
-      return site;
 }
 
 export default Navlinks

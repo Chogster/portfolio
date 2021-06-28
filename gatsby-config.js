@@ -1,47 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Bartu.me",
-    menuLinks: [
-      {
-        language: "en",
-        links: [
-          {
-            name: "About",
-            link: "/"
-          },
-          {
-            name: "Contact",
-            link: "/contact"
-          }
-        ]
-      },
-      {
-        language: "de",
-        links: [
-          {
-            name: "Über mich",
-            link: "/de/"
-          },
-          {
-            name: "Kontakt",
-            link: "/de/contact"
-          }
-        ]
-      },
-      {
-        language: "tr",
-        links: [
-          {
-            name: "Hakkimda",
-            link: "/tr/"
-          },
-          {
-            name: "Iletisim",
-            link: "/tr/contact"
-          }
-        ]
-      }
-    ]
+    supportedLanguages: ["tr", "de", "en"]
   },
   plugins: [
     "gatsby-plugin-sass",
