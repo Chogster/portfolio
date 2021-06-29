@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Bartu.me",
-    supportedLanguages: ["tr", "de", "en"]
+    supportedLanguages: ["tr", "de", "en"],
+    siteUrl: "http://localhost"
   },
   plugins: [
     "gatsby-plugin-sass",
