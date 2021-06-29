@@ -2,13 +2,15 @@ module.exports = {
   siteMetadata: {
     title: "Bartu.me",
     supportedLanguages: ["tr", "de", "en"],
-    siteUrl: "http://localhost"
+    siteUrl: "http://localhost",
+    defaultLanguage: "en"
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-netlify",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
