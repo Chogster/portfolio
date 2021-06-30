@@ -25,9 +25,13 @@ Use `npm run develop` to run it locally and `npm run buld` to build it.
 
 # Documentation
 
+## gatsby-config.js and translations.json
+
+These two files are very important for you to personalise your website. Please make sure to go through them so that everything works and looks as you want. It is very important that you edit the `siteMetadata` in `gatsby-config.js`. The site may not work if you don't set `supportedLanguages` properly.
+
 ## Netlify redirect setup
 
-* By default there are redirects in place thanks to `gatsby-plugin-netlify`, however 404 redirects don't seem to work. Therefore, I added some default `_redirects` inside `static` folder for 404 handling. 
+* By default there are redirects in place thanks to `gatsby-plugin-netlify`, however 404 redirects didn't seem to work. Therefore, I added some default `_redirects` inside `static` folder for 404 handling.
 * In order to support your own website's redirects according to your specified languages, edit the `_redirects` accordingly.
 
 ## nginx redirect setup
