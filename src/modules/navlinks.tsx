@@ -1,7 +1,7 @@
 import { List, ListItem } from "@chakra-ui/react";
 import { Link } from "gatsby";
 import * as React from "react";
-import i18n from "../translations/i18next";
+import { useTranslation } from "react-i18next";
 import { PageContext } from "../types/pagecontext";
 
 interface Linkdetails {
@@ -15,8 +15,8 @@ interface Props {
 
 const Navlinks = ({pageContext}: Props) => {
     const { lang } = pageContext;
-    const resource = i18n.getResource(lang ? lang : "en", "translation", "siteMetadata.menuLinks");
-    const links: Linkdetails[] = resource.links;
+    const { t } = useTranslation();
+    const links: Linkdetails[] = t("siteMetadata.menuLinks.links", { returnObjects: true });
     return (
             <List spacing={3}>
                 {

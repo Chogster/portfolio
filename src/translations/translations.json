@@ -2,36 +2,50 @@
     "en": {
       "translation": {
         "siteMetadata": {
-          "title": "EN - Bartu.me | Portfolio",
+          "title": "Bartu.me | Portfolio",
           "menuLinks": {
             "links": [
                 {
                   "name": "About",
-                  "link": "/en"
+                  "link": "/en",
+                  "description": "My name is Bartu, and I am a software developer."
                 },
                 {
                   "name": "Contact",
-                  "link": "/en/contact"
+                  "link": "/en/contact",
+                  "description": "My contact information could be found under this page."
+                },
+                {
+                  "name": "Projects",
+                  "link": "/en/projects",
+                  "description": "Some of the projects I have done."
                 }
               ]
           }
         },
-        "language": "Language" 
+        "language": "Language"
       }
     },  
     "de": {
       "translation": {
         "siteMetadata": {
-          "title": "DE - Bartu.me | Portfolio",
+          "title": "Bartu.me | Portfolio",
           "menuLinks": {
             "links": [
                 {
                   "name": "Über mich",
-                  "link": "/de/"
+                  "link": "/de/",
+                  "description": "Ich bin Bartu, ein Software-Entwickler."
                 },
                 {
                   "name": "Kontakt",
-                  "link": "/de/contact"
+                  "link": "/de/contact",
+                  "description": "Sie können meine Kontaktinformationen hier finden."
+                },
+                {
+                  "name": "Projekten",
+                  "link": "/de/projects",
+                  "description": "Einige meiner Projekte."
                 }
               ]
           }
@@ -42,16 +56,23 @@
     "tr": {
         "translation": {
           "siteMetadata": {
-            "title": "TR - Bartu.me | Portfolio",
+            "title": "Bartu.me | Portfolyo",
             "menuLinks": {
               "links": [
                   {
-                    "name": "Hakkimda",
-                    "link": "/tr/"
+                    "name": "Hakkımda",
+                    "link": "/tr/",
+                    "description": "Ben Bartu, bir yazılımcıyım."
                   },
                   {
-                    "name": "Iletisim",
-                    "link": "/tr/contact"
+                    "name": "İletişim",
+                    "link": "/tr/contact",
+                    "description": "İletişim bilgilerimi bu sayfada bulabilirsiniz."
+                  },
+                  {
+                    "name": "Projeler",
+                    "link": "/tr/projects",
+                    "description": "Projelerimin bazıları."
                   }
                 ]
             }

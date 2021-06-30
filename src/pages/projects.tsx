@@ -6,8 +6,8 @@ const ContactPage = () => {
 
     return (
         <>
-        <SEO title={t("siteMetadata.title")+" | "+t("siteMetadata.menuLinks.links.1.name")} description={t("siteMetadata.menuLinks.links.1.description")}></SEO>
-            This is the contact page, hello!
+        <SEO title={t("siteMetadata.title")+" | "+t("siteMetadata.menuLinks.links.2.name")} description={t("siteMetadata.menuLinks.links.2.description")}></SEO>
+            This is the projects page, hello!
         </>
     )
 }
