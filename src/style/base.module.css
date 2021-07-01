@@ -1,0 +1,13 @@
+.navLink {
+  font-size: 1.25rem;
+  transition: 0.2s;
+}
+
+.navLink:hover {
+  color: #00bfb1;
+  transition: 0.2s;
+}
+
+.navLinkActive {
+  color: #00bfb1;
+}

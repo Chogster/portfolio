@@ -8,6 +8,7 @@
     "noEmit": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "typeRoots": ["./src/types/css.d.ts"],
     "skipLibCheck": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,

@@ -38,7 +38,7 @@
     "gatsby-plugin-sharp": "^3.7.1",
     "gatsby-plugin-sitemap": "^4.3.1",
     "gatsby-plugin-typescript": "^3.8.0",
-    "gatsby-source-filesystem": "^3.7.1",
+    "gatsby-source-filesystem": "^3.8.0",
     "gatsby-transformer-sharp": "^3.7.1",
     "i18next": "^20.3.2",
     "i18next-browser-languagedetector": "^6.1.2",

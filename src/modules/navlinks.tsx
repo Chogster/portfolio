@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { PageContext } from "../types/pagecontext";
+import * as base from "../style/base.module.css"
 
 interface Linkdetails {
     name: string,
@@ -23,7 +24,10 @@ const Navlinks = ({pageContext}: Props) => {
                     links.map((obj, i) => {
                         return (
                             <ListItem key={lang+obj.name+i+"li"}>
-                                <Link key={lang+obj.name+i+"link"} to={obj.link}>{obj.name}</Link>
+                                <Link key={lang+obj.name+i+"link"} to={obj.link} className={base.navLink}
+                                activeClassName={base.navLinkActive}>
+                                    {obj.name}
+                                </Link>
                             </ListItem>
                         )
                     })
