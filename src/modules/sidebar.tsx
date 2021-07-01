@@ -1,5 +1,5 @@
 import { MoonIcon, SunIcon, ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
-import { useDisclosure, useColorMode, IconButton, Button, Avatar, Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { useDisclosure, useColorMode, IconButton, Button, Avatar, Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Menu, MenuButton, MenuItem, MenuList, Heading, Wrap } from "@chakra-ui/react";
 import { useStaticQuery, graphql, navigate } from "gatsby";
 import React, { MutableRefObject } from "react";
 import { useTranslation } from "react-i18next";
@@ -43,11 +43,14 @@ const Sidebar = ({pageContext}: SidebarProps) => {
                         <DrawerCloseButton />
                         <DrawerHeader fontSize="2rem"></DrawerHeader>
                         <DrawerBody>
-                        <Box width="100%" display="flex" alignItems="center" py="20px" justifyContent="center">
-                            <Avatar size="full" name="Bartu Bazna" src="https://avatars.githubusercontent.com/u/25952454?v=4" />{" "}
-                            {/* <Input placeholder="Type here..." /> */}
+                        <Box width="100%" display="flex" alignItems="center" py="0.2rem;" justifyContent="center" px="1rem">
+                            <Avatar size="full" name="Bartu Bazna" src="https://avatars.githubusercontent.com/u/25952454?v=4" />
                         </Box>
+                            <Heading textAlign="center" py="0.2rem;">Bartu Bazna</Heading>
+                        <Wrap mt="1rem;">
                             <Navlinks pageContext={pageContext} />
+                        </Wrap>
+                        
                         </DrawerBody>
 
                         <DrawerFooter display="flex" alignItems="center" justifyContent="space-around">

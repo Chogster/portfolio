@@ -11,3 +11,18 @@
 .navLinkActive {
   color: #00bfb1;
 }
+
+.landingBg {
+  /* background-image: url("https://source.unsplash.com/user/chogster/likes/1920x1080"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 33vh;
+  opacity: 0.8;
+}
+
+.landingTitle {
+  position: absolute;
+  font-size: 3rem;
+}
