@@ -2,7 +2,7 @@ import * as React from "react"
 import { I18nextProvider } from "react-i18next";
 import Layout from "./src/modules/layout";
 import i18n from "./src/translations/i18next"
-import {ChakraProvider, ColorModeProvider} from '@chakra-ui/react';
+import {ChakraProvider, ColorModeScript} from '@chakra-ui/react';
 import theme from './chakra.config';
 
 
@@ -16,7 +16,7 @@ export const wrapPageElement = ({ element, props }) => {
   }
   return (
       <ChakraProvider theme={theme}>
-        <ColorModeProvider options={theme.config} />
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <I18nextProvider i18n={i18n}>
             <Layout pageContext={props.pageContext}>
               {element}
