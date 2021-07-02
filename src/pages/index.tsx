@@ -21,9 +21,9 @@ const IndexPage = () => {
               </Box>
               <Box w="100%" boxSize="fit-content">
                 {
-                  paragraphs.map((paragraph, i) => {
+                  [...paragraphs].map((paragraph, i) => {
                     return (
-                      <Box>
+                      <Box key={i}>
                         {paragraph}<br />
                         {i === paragraph.length ? "" : <br />}
                       </Box>
