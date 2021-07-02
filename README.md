@@ -59,4 +59,9 @@ These two files are very important for you to personalise your website. Please m
 	}
 ```
 
+# Credits
+
+* Illustrations are done by [Katerina Limpitsouni](https://undraw.co)
+* Images are from [Fernando Hernandez](https://unsplash.com/photos/efzwcMRM6j4), [Charles Deluvio](https://unsplash.com/photos/pjAH2Ax4uWk), [AltumCode](https://unsplash.com/photos/dC6Pb2JdAqs), [Quino Al](https://unsplash.com/photos/4SNUcHPiC8c), [Sigmund](https://unsplash.com/photos/HsTnjCVQ798), [Ethan Sykes](https://unsplash.com/photos/iISyBKOT2D0)
+
 More will be added here...

@@ -2,9 +2,10 @@ import { MoonIcon, SunIcon, ChevronDownIcon, HamburgerIcon } from "@chakra-ui/ic
 import { useDisclosure, useColorMode, IconButton, Button, Avatar, Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Menu, MenuButton, MenuItem, MenuList, Heading, Wrap } from "@chakra-ui/react";
 import { useStaticQuery, graphql, navigate } from "gatsby";
 import React, { MutableRefObject } from "react";
-import { useTranslation } from "react-i18next";
 import { PageContext } from "../types/pagecontext";
 import Navlinks from "./navlinks";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 
 interface QueryResponse {
     supportedLanguages: string[]
@@ -20,7 +21,6 @@ const Sidebar = ({pageContext}: SidebarProps) => {
     const toggleRef: MutableRefObject<any> = React.useRef()
     const { colorMode, toggleColorMode } = useColorMode()
     const { supportedLanguages } = getSupportedLanguages();
-    const { t } = useTranslation();
 
     return (
         <>
@@ -43,7 +43,7 @@ const Sidebar = ({pageContext}: SidebarProps) => {
                         <DrawerCloseButton />
                         <DrawerHeader fontSize="2rem"></DrawerHeader>
                         <DrawerBody>
-                        <Box width="100%" display="flex" alignItems="center" py="0.2rem;" justifyContent="center" px="1rem">
+                        <Box width="100%" display="flex" alignItems="center" py="0.5rem;" justifyContent="center" px="2rem">
                             <Avatar size="full" name="Bartu Bazna" src="https://avatars.githubusercontent.com/u/25952454?v=4" />
                         </Box>
                             <Heading textAlign="center" py="0.2rem;">Bartu Bazna</Heading>
@@ -74,7 +74,7 @@ const Sidebar = ({pageContext}: SidebarProps) => {
                                     }
                                     </MenuList>
                                     <MenuButton isActive={isOpen} as={Button} rightIcon={<ChevronDownIcon />}>
-                                        {t('language')}
+                                        <FontAwesomeIcon icon={faLanguage}></FontAwesomeIcon>
                                     </MenuButton>
                                     </>
                                 )}

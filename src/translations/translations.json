@@ -6,7 +6,7 @@
           "menuLinks": {
             "links": [
                 {
-                  "name": "About",
+                  "name": "About me",
                   "link": "/en/",
                   "description": "My name is Bartu, and I am a software developer."
                 },
@@ -23,7 +23,15 @@
               ]
           }
         },
-        "language": "Language"
+        "pages": {
+          "about": {
+            "landingBox": "About me",
+            "paragraphs": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu ultricies massa. Mauris gravida est turpis, id vestibulum felis faucibus sit amet. Sed sit amet vehicula eros, sed pretium nisl. Sed sit amet velit volutpat, tempus ipsum eget, eleifend sem. Quisque consectetur blandit sapien, sed pretium sem iaculis vitae. Maecenas fringilla enim id elementum volutpat. Suspendisse a mi mauris. Suspendisse fermentum consequat pellentesque. Integer ut consequat nisl. Praesent metus ante, pulvinar id semper at, dignissim eu massa. Mauris eget ipsum sapien. Quisque lobortis lobortis diam, vel condimentum erat aliquet at. Nulla vitae scelerisque est, blandit efficitur sapien. Sed ac ipsum non eros sagittis semper et et neque. In luctus fermentum condimentum.",
+              "Nullam scelerisque mauris eu ligula commodo, et aliquam ante iaculis. Maecenas semper consequat purus, vel finibus sem malesuada vel. In fermentum nisl nisl. Quisque erat eros, eleifend non libero consequat, tincidunt eleifend arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pretium tempus odio, a vestibulum mi tincidunt non. Proin justo mi, mollis at felis ac, mollis fringilla justo. Nulla tincidunt auctor lectus vel blandit. Quisque facilisis augue nec urna interdum, id laoreet nulla pretium. Maecenas vulputate neque in nunc tristique eleifend. Donec posuere vulputate orci nec tincidunt. Pellentesque dictum odio ut fermentum posuere. Aliquam vel posuere mauris. Etiam id sollicitudin mi, sodales tempus est. Suspendisse quis eros a dolor finibus convallis. Sed at mauris ultrices, hendrerit felis vel, egestas orci."
+            ]
+          }
+        }
       }
     },  
     "de": {
@@ -50,7 +58,15 @@
               ]
           }
         },
-        "language": "Sprache" 
+        "pages": {
+          "about": {
+            "landingBox": "Über mich",
+            "paragraphs": [
+              "Vestibulum euismod molestie elementum. Integer urna nulla, tincidunt ut lacinia sit amet, feugiat ac odio. Sed auctor feugiat neque, in fermentum ante sagittis vitae. Donec in velit magna. Nunc finibus sit amet neque vel sollicitudin. In mi erat, varius non mattis imperdiet, condimentum ut quam. Maecenas eu maximus ex, vel semper lorem. Etiam tristique sem eu iaculis blandit. Maecenas ut erat et dolor porta mattis at at tellus. Nunc quis dui bibendum, pellentesque sapien convallis, luctus augue. Sed facilisis quam eu massa faucibus, a luctus nisi iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum id consequat ex. Quisque iaculis metus sed molestie molestie.",
+              "Nullam eget luctus mi, a rhoncus erat. Quisque vehicula ligula at turpis ullamcorper fringilla. Donec id maximus lacus. Sed elementum vestibulum eros, id scelerisque nisi sodales sit amet. Etiam id elementum leo. Quisque ut commodo ipsum. Vestibulum tincidunt mauris eu eros bibendum, posuere efficitur urna viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lobortis gravida varius. Vestibulum condimentum diam at nibh egestas, sed interdum ante congue. Donec suscipit lorem ipsum, vitae ullamcorper sapien euismod non. Nam enim massa, luctus sagittis hendrerit vel, rhoncus ut nisl. Donec et erat non sapien porttitor volutpat. Vestibulum ultricies risus a ipsum sagittis, vel maximus diam volutpat. In ornare vehicula ipsum, in eleifend tellus ornare vel. Phasellus ac purus vulputate diam euismod euismod pharetra a nunc."
+            ]
+          }
+        }
       }
     },
     "tr": {
@@ -77,7 +93,15 @@
                 ]
             }
           },
-          "language": "Dil" 
+          "pages": {
+            "about": {
+              "landingBox": "Hakkımda",
+              "paragraphs": [
+                "Duis varius eros ligula, id pretium tortor egestas quis. Pellentesque pharetra diam mauris, quis rhoncus eros viverra ut. Etiam risus risus, euismod at ante eget, imperdiet tempor magna. Mauris et lectus sit amet turpis pulvinar rhoncus. Etiam vulputate nisl nec congue facilisis. Curabitur blandit purus et egestas pellentesque. Proin condimentum, nibh a vehicula aliquam, tortor enim mollis diam, ac porta lorem massa vel orci. Integer lectus ligula, laoreet eget neque sed, varius placerat ante. Cras euismod augue et metus vulputate, id posuere tortor mollis. Nulla justo erat, tincidunt quis nunc non, viverra efficitur erat. Praesent lorem urna, cursus non lacus at, blandit aliquam nisi. Sed egestas lacus at vehicula consequat. Sed sagittis nunc et diam tempor, non dignissim libero aliquam.",
+                "Donec blandit sapien at libero interdum, et consequat velit accumsan. Suspendisse congue purus efficitur pellentesque ullamcorper. Morbi hendrerit, lorem eu egestas accumsan, magna elit mattis odio, at mattis erat est ut lectus. Aliquam ac viverra dui. In eu sapien non ipsum egestas pellentesque. Curabitur eu ullamcorper risus, nec malesuada lacus. Nulla volutpat vehicula elit sit amet condimentum. Vestibulum id ex eget justo imperdiet porta congue eu metus. Etiam sagittis ligula a nisl iaculis imperdiet. Cras consectetur massa eget elit tempus, vitae condimentum tellus semper. Fusce ipsum eros, ultricies eu mi ut, vulputate aliquam ligula. Nam lacinia lorem nec felis consectetur, in convallis justo consequat. Morbi suscipit gravida arcu eget ultricies. Suspendisse ex velit, dignissim ac venenatis et, lobortis eu orci. Ut pretium, libero in finibus tempus, lectus ipsum eleifend eros, quis sagittis libero massa vitae metus."
+              ]
+            }
+          }
         }
       }
   }
