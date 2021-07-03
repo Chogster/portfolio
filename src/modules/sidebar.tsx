@@ -47,7 +47,7 @@ const Sidebar = ({pageContext}: SidebarProps) => {
                             <Avatar size="full" name="Bartu Bazna" src="https://avatars.githubusercontent.com/u/25952454?v=4" />
                         </Box>
                             <Heading textAlign="center" py="0.2rem;">Bartu Bazna</Heading>
-                        <Wrap mt="1rem;">
+                        <Wrap mt="1rem;" onClick={onClose}>
                             <Navlinks pageContext={pageContext} />
                         </Wrap>
                         
@@ -68,7 +68,7 @@ const Sidebar = ({pageContext}: SidebarProps) => {
                                     {
                                         supportedLanguages.map((obj) => {
                                             return (
-                                                <MenuItem onClick={() => changeLanguageAndGoToAddress(pageContext.originalPath, obj)} key={obj}>{obj.toUpperCase()}</MenuItem>
+                                                <MenuItem onClick={() => {changeLanguageAndGoToAddress(pageContext.originalPath, obj); onClose()}} key={obj}>{obj.toUpperCase()}</MenuItem>
                                             )
                                         })
                                     }
