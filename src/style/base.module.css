@@ -30,12 +30,14 @@
 
 .landingBox {
   position: absolute;
-  margin-bottom: 5rem;
-  background-color:red;
+  margin-top: 9.75rem;
   border-radius: 0.2rem;
   box-sizing:fit-content;
   margin-left:2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-
+  margin-right:2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  word-break: break-all;
+  z-index: 1;
+  opacity: 0.8;
 }

@@ -69,18 +69,16 @@ const Layout = ( {children, pageContext}: Props) => {
     return (
         <>
             <Box width="100%" height="4rem" display="flex" alignItems="end" justifyContent="space-between" pt="2rem" px="2rem">
-                <Box fontSize="2rem">{t("siteMetadata.title")}</Box>
+                <Box fontSize="1.5rem">{t("siteMetadata.title")}</Box>
                 <Spacer />
                 <Sidebar pageContext={pageContext} />
             </Box>
             <Skeleton mt="1rem" isLoaded={imgLoaded}>
-                <Box width="100%" height="40vh" display="flex" justifyContent="center">
-                    
-                    <Box alignSelf="center" className={base.landingBg} alignItems="end" alignContent="end" display="flex" backgroundImage={imgUrl}>
-                        <Box backgroundColor={colorMode === 'light' ? 'gray' : 'red'} className={base.landingBox} fontSize="3rem" >
-                            {t('pages.'+shortSlug+'.landingBox')}
-                        </Box>
-                    </Box>
+            <Box backgroundColor={colorMode === 'light' ? 'gray' : 'black'} className={base.landingBox} fontSize="3rem" >
+                    {t('pages.'+shortSlug+'.landingBox')}
+                </Box>
+                <Box width="100%" height="40vh">
+                    <Box alignSelf="center" className={base.landingBg} alignItems="end" alignContent="end" display="flex" backgroundImage={imgUrl} />
                 </Box>
             </Skeleton>
             <SimpleGrid>
