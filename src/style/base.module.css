@@ -30,7 +30,6 @@
 
 .landingBox {
   position: absolute;
-  margin-top: 9.75rem;
   border-radius: 0.2rem;
   box-sizing:fit-content;
   margin-left:2rem;
@@ -39,5 +38,5 @@
   padding-right: 1rem;
   word-break: break-all;
   z-index: 1;
-  opacity: 0.8;
+  opacity: 0.9;
 }

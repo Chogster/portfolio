@@ -39,7 +39,7 @@ const Sidebar = ({pageContext}: SidebarProps) => {
                     finalFocusRef={btnRef}
                 >
                     <DrawerOverlay />
-                    <DrawerContent>
+                    <DrawerContent bg={colorMode === "dark" ? "b2dark" : "white"}>
                         <DrawerCloseButton />
                         <DrawerHeader fontSize="2rem"></DrawerHeader>
                         <DrawerBody>

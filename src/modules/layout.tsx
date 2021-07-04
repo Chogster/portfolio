@@ -73,8 +73,8 @@ const Layout = ( {children, pageContext}: Props) => {
                 <Spacer />
                 <Sidebar pageContext={pageContext} />
             </Box>
-            <Skeleton mt="1rem" isLoaded={imgLoaded}>
-                <Box backgroundColor={colorMode === 'light' ? 'gray' : 'black'} className={base.landingBox} fontSize="3rem" >
+            <Skeleton mt="1rem" display="flex" flexDirection="column" justifyContent="center" isLoaded={imgLoaded}>
+                <Box backgroundColor={colorMode === 'light' ? 'gray' : '#111'} className={base.landingBox} fontSize="3rem" >
                     {t('pages.'+shortSlug+'.landingBox')}
                 </Box>
                 <Box width="100%" height="40vh">
