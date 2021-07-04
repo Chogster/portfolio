@@ -67,7 +67,7 @@ const Layout = ( {children, pageContext}: Props) => {
     );
 
     return (
-        <>
+        <Box h="100vh" display="flex" flexDirection="column">
             <Box width="100%" height="4rem" display="flex" alignItems="end" justifyContent="space-between" pt="2rem" px="1rem">
                 <Box fontSize="1.5rem">{t("siteMetadata.title")}</Box>
                 <Spacer />
@@ -85,14 +85,14 @@ const Layout = ( {children, pageContext}: Props) => {
                 <Box display="block" boxSize="fit-content" px="1rem" py="2rem">
                         {childrenWithProps}
                 </Box>
-                
-                <Box textAlign="center" justifyContent="center" alignItems="center" as="footer" role="contentinfo" fontSize="1rem" w="100" py="10" display="flex" bottom="0" px={{ base: '4', md: '8' }}>
-                    <Center>
-                        Made with &nbsp;<FontAwesomeIcon icon={faCoffee} />&nbsp; and&nbsp;<FontAwesomeIcon color="red" icon={faHeart} />&nbsp;by Bartu Bazna
-                    </Center>
-                </Box>
             </SimpleGrid>
-        </>
+            <Spacer />
+            <Box py="3rem">
+                <Center>
+                    Made with &nbsp;<FontAwesomeIcon icon={faCoffee} />&nbsp; and&nbsp;<FontAwesomeIcon color="red" icon={faHeart} />&nbsp;by Bartu Bazna
+                </Center>
+            </Box>
+        </Box>
     );
 }
 
