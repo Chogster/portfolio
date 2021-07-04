@@ -2,7 +2,6 @@ import { Box, Grid, SimpleGrid, Tag } from "@chakra-ui/react";
 import * as React from "react"
 import { useTranslation } from "react-i18next";
 import SEO from "../modules/seo";
-import * as base from "../style/base.module.css";
 
 // markup
 const IndexPage = () => {

@@ -64,7 +64,7 @@ const Sidebar = ({pageContext}: SidebarProps) => {
                             <Menu>
                                 {({ isOpen }) => (
                                     <>
-                                    <MenuList>
+                                    <MenuList bg={colorMode === "dark" ? "b2dark" : 'white'}>
                                     {
                                         supportedLanguages.map((obj) => {
                                             return (

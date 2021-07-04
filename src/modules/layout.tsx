@@ -5,8 +5,8 @@ import {
     Center,
     Skeleton,
     useColorMode,
-    Grid,
     SimpleGrid,
+    Link,
 } from "@chakra-ui/react"
 import { PageContext } from "../types/pagecontext";
 import Sidebar from "./sidebar";
@@ -89,7 +89,7 @@ const Layout = ( {children, pageContext}: Props) => {
             <Spacer />
             <Box py="3rem">
                 <Center>
-                    Made with &nbsp;<FontAwesomeIcon icon={faCoffee} />&nbsp; and&nbsp;<FontAwesomeIcon color="red" icon={faHeart} />&nbsp;by Bartu Bazna
+                    Made with &nbsp;<FontAwesomeIcon icon={faCoffee} />&nbsp; and&nbsp;<FontAwesomeIcon color="red" icon={faHeart} />&nbsp;by&nbsp;<Link target="_blank" color="#00bfb1" href="https://github.com/chogster/portfolio">Bartu Bazna</Link>
                 </Center>
             </Box>
         </Box>
