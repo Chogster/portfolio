@@ -61,7 +61,7 @@ const Layout = ( {children, pageContext}: Props) => {
     const setPage = () => {
         setImgLoaded(false);
         const img = new Image();
-        const slug = pageContext.originalPath.replace(/\//g, "");
+        const slug = pageContext.originalPath.replace(/(.html|\/)/g, "");
         setShortSlug(slug ? slug : 'about');
 
         if (slug === "contact") {
@@ -98,7 +98,7 @@ const Layout = ( {children, pageContext}: Props) => {
                     {t('pages.'+shortSlug+'.landingBox')}
                 </Box>
                 {(shortSlug === "about") && 
-                <Box mt="10rem" backgroundColor={colorMode === 'light' ? 'lightgray' : '#151515'} className={base.landingBox} fontSize="1.5rem">
+                <Box mt="10rem" mb="auto" backgroundColor={colorMode === 'light' ? 'lightgray' : '#151515'} className={base.landingBox} fontSize="1.5rem">
                     <span ref={typeTarget}></span>
                 </Box>}
                 <Box width="100%" height="40vh">
