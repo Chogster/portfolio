@@ -6,7 +6,7 @@ import { mode, Styles } from "@chakra-ui/theme-tools";
 const styles: Styles = {
     global: props => ({
         body: {
-            bg: mode('white', '#111')(props)
+            bg: mode('white', '#151515')(props)
         }
     })
 }
@@ -18,7 +18,7 @@ const config: DeepPartial<ThemeConfig> = {
 }
 
 const colors = {
-    b2dark: '#111'
+    b2dark: '#151515'
 }
 
 

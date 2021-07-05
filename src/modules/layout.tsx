@@ -51,7 +51,7 @@ const Layout = ( {children, pageContext}: Props) => {
         } else if (slug === "404") {
             img.src = `/images/404.jpg`;
         } else {
-            const decider = (Math.floor(Math.random() *100)) % 3;
+            const decider = (Math.floor(Math.random() *100)) % 2;
             img.src = `/images/landing${decider}.jpg`;
         }
 
@@ -74,7 +74,7 @@ const Layout = ( {children, pageContext}: Props) => {
                 <Sidebar pageContext={pageContext} />
             </Box>
             <Skeleton mt="1rem" display="flex" flexDirection="column" justifyContent="center" isLoaded={imgLoaded}>
-                <Box backgroundColor={colorMode === 'light' ? 'gray' : '#111'} className={base.landingBox} fontSize="3rem" >
+                <Box backgroundColor={colorMode === 'light' ? 'lightgray' : '#151515'} className={base.landingBox} fontSize="3rem" >
                     {t('pages.'+shortSlug+'.landingBox')}
                 </Box>
                 <Box width="100%" height="40vh">
@@ -82,7 +82,7 @@ const Layout = ( {children, pageContext}: Props) => {
                 </Box>
             </Skeleton>
             <SimpleGrid>
-                <Box display="block" boxSize="fit-content" px="1rem" py="2rem">
+                <Box fontSize="1.15rem" display="block" boxSize="fit-content" px="1rem" py="2rem">
                         {childrenWithProps}
                 </Box>
             </SimpleGrid>
