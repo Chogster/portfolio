@@ -70,12 +70,12 @@ const IndexPage = () => {
                 {
                   [...skills].map((skill, i) => {
                     return (
-                      <>
-                        <Tag mt="0.3rem" py="0.3rem" fontSize="1.15rem" key={i} borderRadius="full">
+                      <span key={i}>
+                        <Tag mt="0.3rem" py="0.3rem" fontSize="1.15rem" borderRadius="full">
                           {skill}
                         </Tag>
                         {i === skills.length -1 ? "" : " "}
-                      </>
+                      </span>
                     )
                   }
                 )}

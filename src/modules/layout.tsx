@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee, faHeart } from "@fortawesome/free-solid-svg-icons";
+import Typed from 'typed.js';
 
 interface Props {
     location?: Location
@@ -30,6 +31,8 @@ const Layout = ( {children, pageContext}: Props) => {
     const [imgUrl, setImgUrl] = React.useState<string>();
     const { t } = useTranslation();
     const { colorMode } = useColorMode();
+    const typeTarget = React.useRef(null);
+    const typedStrings: string[] = t("pages.about.typedStrings", { returnObjects: true });
 
     // Show skeleton on route change
     useEffect(() => {
@@ -37,6 +40,22 @@ const Layout = ( {children, pageContext}: Props) => {
             setPage();
             setCurrentPath(pageContext.originalPath);
         }
+
+        if ((shortSlug === "about")) {
+            const typed = new Typed(typeTarget.current || "", {
+                strings: typedStrings,
+                typeSpeed: 30,
+                backDelay: 2000,
+                backSpeed: 40,
+                loopCount: Infinity,
+                loop: true,
+            });
+    
+            return () => {
+                typed.destroy();
+            };
+        }
+        
     });
 
     const setPage = () => {
@@ -77,6 +96,10 @@ const Layout = ( {children, pageContext}: Props) => {
                 <Box backgroundColor={colorMode === 'light' ? 'lightgray' : '#151515'} className={base.landingBox} fontSize="3rem" >
                     {t('pages.'+shortSlug+'.landingBox')}
                 </Box>
+                {(shortSlug === "about") && 
+                <Box mt="10rem" backgroundColor={colorMode === 'light' ? 'lightgray' : '#151515'} className={base.landingBox} fontSize="1.5rem">
+                    <span ref={typeTarget}></span>
+                </Box>}
                 <Box width="100%" height="40vh">
                     <Box alignSelf="center" className={base.landingBg} alignItems="end" alignContent="end" display="flex" backgroundImage={imgUrl} />
                 </Box>
