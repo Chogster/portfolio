@@ -59,6 +59,7 @@ const Layout = ( {children, pageContext}: Props) => {
     });
 
     const setPage = () => {
+        setImgLoaded(false);
         const img = new Image();
         const slug = pageContext.originalPath.replace(/\//g, "");
         setShortSlug(slug ? slug : 'about');
