@@ -94,11 +94,11 @@ const Layout = ( {children, pageContext}: Props) => {
                 <Sidebar pageContext={pageContext} />
             </Box>
             <Skeleton mt="1rem" display="flex" flexDirection="column" justifyContent="center" isLoaded={imgLoaded}>
-                <Box backgroundColor={colorMode === 'light' ? 'lightgray' : '#151515'} className={base.landingBox} fontSize="3rem" >
+                <Box backgroundColor={colorMode === 'light' ? 'rgba(211, 211, 211, 0.6)' : 'rgba(21, 21, 21, 0.7)'} className={base.landingBox} fontSize="3rem" >
                     {t('pages.'+shortSlug+'.landingBox')}
                 </Box>
                 {(shortSlug === "about") && 
-                <Box mt="10rem" mb="auto" backgroundColor={colorMode === 'light' ? 'lightgray' : '#151515'} className={base.landingBox} fontSize="1.5rem">
+                <Box mt="10rem" mb="auto" backgroundColor={colorMode === 'light' ? 'rgba(211, 211, 211, 0.6)' : 'rgba(21, 21, 21, 0.7)'} className={base.landingBox} fontSize="1.5rem">
                     <span ref={typeTarget}></span>
                 </Box>}
                 <Box width="100%" height="40vh">

@@ -36,7 +36,8 @@
             "typedStrings": ["I am Bartu.",  "I am a software developer."]
           },
           "contact": {
-            "landingBox": "Contact"
+            "landingBox": "Contact",
+            "paragraphs": ["Nulla facilisi nullam vehicula ipsum. Massa tincidunt nunc pulvinar sapien. Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Massa eget egestas purus viverra accumsan in nisl."]
           },
           "projects": {
             "landingBox": "Projects"
@@ -84,7 +85,8 @@
             "typedStrings": ["Ich bin Bartu.",  "Ich bin ein Software-Entwickler."]
           },
           "contact": {
-            "landingBox": "Kontakt"
+            "landingBox": "Kontakt",
+            "paragraphs": ["Nibh praesent tristique magna sit amet purus gravida. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Pellentesque sit amet porttitor eget dolor morbi."]
           },
           "projects": {
             "landingBox": "Projects"
@@ -132,7 +134,8 @@
               "typedStrings": ["Ben Bartu.",  "Ben bir yazılımcıyım."]
             },
             "contact": {
-              "landingBox": "İletişim"
+              "landingBox": "İletişim",
+              "paragraphs": ["Bibendum arcu vitae elementum curabitur. Ante in nibh mauris cursus mattis molestie a. Sit amet facilisis magna etiam tempor orci eu lobortis. Aliquam etiam erat velit scelerisque in dictum non consectetur a."]
             },
             "projects": {
               "landingBox": "Projeler"
