@@ -97,7 +97,7 @@ const Layout = ( {children, pageContext}: Props) => {
             </Grid>
             <Skeleton mt="6rem" isLoaded={imgLoaded}>
             <Box width="100%" height="40vh" className={base.landingBg} position="relative" backgroundImage={imgUrl}>
-                <SimpleGrid columns={1} w="100%" h="40vh" alignItems="center">
+                <SimpleGrid columns={1} w="100%" h="40vh" alignItems="center" alignContent="center" verticalAlign="center">
                     <Box backgroundColor={colorMode === 'light' ? 'rgba(211, 211, 211, 0.6)' : 'rgba(21, 21, 21, 0.7)'} className={base.landingBox} fontSize="3rem" >
                         {t('pages.'+shortSlug+'.landingBox')}
                     </Box>
