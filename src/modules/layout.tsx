@@ -7,6 +7,7 @@ import {
     useColorMode,
     SimpleGrid,
     Link,
+    Grid,
 } from "@chakra-ui/react"
 import { PageContext } from "../types/pagecontext";
 import Sidebar from "./sidebar";
@@ -88,12 +89,12 @@ const Layout = ( {children, pageContext}: Props) => {
 
     return (
         <Box h="100vh" display="flex" flexDirection="column">
-            <Box width="100%" height="4rem" display="flex" alignItems="end" justifyContent="space-between" pt="2rem" px="1rem">
+            <Grid templateRows="1" templateColumns="25fr 5fr 1fr" position="fixed" zIndex="2" backgroundColor={colorMode === 'light' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(21, 21, 21, 0.9)'} width="100%" height="6rem" py='2rem' px="1rem">
                 <Box fontSize="1.5rem">{t("siteMetadata.title")}</Box>
                 <Spacer />
                 <Sidebar pageContext={pageContext} />
-            </Box>
-            <Skeleton mt="1rem" display="flex" flexDirection="column" justifyContent="center" isLoaded={imgLoaded}>
+            </Grid>
+            <Skeleton mt="6rem" display="flex" flexDirection="column" justifyContent="center" isLoaded={imgLoaded}>
                 <Box backgroundColor={colorMode === 'light' ? 'rgba(211, 211, 211, 0.6)' : 'rgba(21, 21, 21, 0.7)'} className={base.landingBox} fontSize="3rem" >
                     {t('pages.'+shortSlug+'.landingBox')}
                 </Box>
@@ -106,7 +107,7 @@ const Layout = ( {children, pageContext}: Props) => {
                 </Box>
             </Skeleton>
             <SimpleGrid>
-                <Box fontSize="1.15rem" display="block" boxSize="fit-content" px="1rem" py="2rem">
+                <Box fontSize="1.15rem" display="block" boxSize="fit-content" px="2rem" py="2rem">
                         {childrenWithProps}
                 </Box>
             </SimpleGrid>
