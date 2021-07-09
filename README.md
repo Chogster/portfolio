@@ -31,7 +31,7 @@ These two files are very important for you to personalise your website. Please m
 
 ## Contact form
 
-In order for the contact form to work, you need to set up a form provider and use call the respective action URL for it to work. Check out gatsby [building a form documentation]("https://www.gatsbyjs.com/docs/building-a-contact-form/") for more information on how to achieve this.
+In order for the contact form to work, you need to set up a form provider and use call the respective action URL for it to work. Check out gatsby building a form  [documentation]("https://www.gatsbyjs.com/docs/building-a-contact-form") for more information on how to achieve this.
 
 Note: There is a placeholder function for the contact form. Remove the `onSubmit` method from the `form` tag and add your action with your provider URL.
 
