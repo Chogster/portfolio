@@ -89,7 +89,7 @@ const Layout = ( {children, pageContext}: Props) => {
     );
 
     return (
-        <Box h="100vh" display="flex" flexDirection="column">
+        <SimpleGrid h="100vh" columns={1}>
             <Grid templateRows="1" templateColumns="25fr 5fr 1fr" position="fixed" zIndex="2" backgroundColor={colorMode === 'light' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(21, 21, 21, 0.9)'} width="100%" height="6rem" py='2rem' px="1rem">
                 <Text fontWeight="bold" bgGradient={colorMode === 'light' ? 'linear(to-l, rgb(21,21,21), #00bfb1)' : 'linear(to-r, rgb(211, 211, 211), #00bfb1)'} fontSize="1.5rem" bgClip="text">{t("siteMetadata.title")}</Text>
                 <Spacer />
@@ -97,16 +97,16 @@ const Layout = ( {children, pageContext}: Props) => {
             </Grid>
             <Skeleton mt="6rem" isLoaded={imgLoaded}>
             <Box width="100%" height="40vh" className={base.landingBg} position="relative" backgroundImage={imgUrl}>
-                <SimpleGrid columns={1} w="100%" h="40vh" alignItems="center" alignContent="center" verticalAlign="center">
-                    <Box backgroundColor={colorMode === 'light' ? 'rgba(211, 211, 211, 0.6)' : 'rgba(21, 21, 21, 0.7)'} className={base.landingBox} fontSize="3rem" >
+                <Grid columns={1} w="100%" h="40vh" display="flex" alignItems="center">
+                    <Box backgroundColor={colorMode === 'light' ? 'rgba(211, 211, 211, 0.6)' : 'rgba(21, 21, 21, 0.7)'} className={base.landingBox} fontSize="3rem">
                         {t('pages.'+shortSlug+'.landingBox')}
                     </Box>
                     {(shortSlug === "about") && 
-                    <Box mt="10rem" mb="auto" backgroundColor={colorMode === 'light' ? 'rgba(211, 211, 211, 0.6)' : 'rgba(21, 21, 21, 0.7)'} className={base.landingBox} fontSize="1.5rem">
+                    <Box mt="5.5em" backgroundColor={colorMode === 'light' ? 'rgba(211, 211, 211, 0.6)' : 'rgba(21, 21, 21, 0.7)'} className={base.landingBox} fontSize="1.25rem">
                         <span ref={typeTarget}></span>
                     </Box>}
-                </SimpleGrid>
-                </Box>
+                </Grid>
+            </Box>
             </Skeleton>
             <SimpleGrid>
                 <Box fontSize="1.15rem" display="block" boxSize="fit-content" px="2rem" py="2rem">
@@ -119,7 +119,7 @@ const Layout = ( {children, pageContext}: Props) => {
                     Made with &nbsp;<FontAwesomeIcon icon={faCoffee} />&nbsp; and&nbsp;<FontAwesomeIcon color="red" icon={faHeart} />&nbsp;by&nbsp;<Link target="_blank" color="#00bfb1" href="https://github.com/chogster/portfolio">Bartu Bazna</Link>
                 </Center>
             </Box>
-        </Box>
+        </SimpleGrid>
     );
 }
 
