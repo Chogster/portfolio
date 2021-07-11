@@ -1,4 +1,4 @@
-import { Box, SimpleGrid, Tag, Image } from "@chakra-ui/react";
+import { Box, SimpleGrid, Tag, Image, TagLeftIcon } from "@chakra-ui/react";
 import * as React from "react"
 import { useTranslation } from "react-i18next";
 import SEO from "../modules/seo";
@@ -15,8 +15,7 @@ const IndexPage = () => {
     <>
       <SEO title={t("siteMetadata.title")+" | "+t("siteMetadata.menuLinks.links.0.name")} description={t("siteMetadata.menuLinks.links.0.description")}></SEO>
       <SimpleGrid columns={{base: 1, lg: 2}} gap={10}>
-        <Box w="100%" display="block" boxSize="fit-content">
-          <SimpleGrid columns={1}>
+          <SimpleGrid columns={1} boxSize="fit-content">
             <Box w="100%" textAlign="center" display="block" mb="1rem">
               <Image style={{marginLeft:"auto", marginRight:"auto", height:"18vh"}} src="/illustrations/undraw_working.svg" />
             </Box>
@@ -33,9 +32,7 @@ const IndexPage = () => {
               )}
             </Box>
           </SimpleGrid>
-        </Box>
-        <Box w="100%" display="block" boxSize="fit-content">
-          <SimpleGrid columns={1}>
+          <SimpleGrid columns={1} boxSize="fit-content">
             <SimpleGrid columns={1}>
               <Box w="100%" textAlign="center" display="block" mb="1rem">
                 <Image style={{marginLeft:"auto", marginRight:"auto", height:"18vh"}} src="/illustrations/undraw_winter_walk.svg" />
@@ -53,7 +50,7 @@ const IndexPage = () => {
                 )}
               </Box>
             </SimpleGrid>
-            <SimpleGrid columns={1}>
+            <SimpleGrid columns={1} py="1rem">
               <Box w="100%" textAlign="center" display="block" mb="1rem">
                 <Image style={{marginLeft:"auto", marginRight:"auto", height:"18vh"}} src="/illustrations/undraw_certificate.svg" />
               </Box>
@@ -71,10 +68,10 @@ const IndexPage = () => {
                   [...skills].map((skill, i) => {
                     return (
                       <span key={i}>
-                        <Tag mt="0.3rem" py="0.3rem" px="1.5rem" fontSize="1.15rem" borderRadius="xl">
-                          <Image maxH="1rem" ml="-0.75rem" mr="0.4rem" src={`/devicons/${skill.toLowerCase()}.svg`} /> {skill}
+                        <Tag mt="0.3rem" py="0.3rem" fontSize="1.15rem" mr="2px">
+                          <TagLeftIcon as={Image} src={`/devicons/${skill.toLowerCase()}.svg`} />
+                          {skill}
                         </Tag>
-                        {i === skills.length -1 ? "" : " "}
                       </span>
                     )
                   }
@@ -82,7 +79,6 @@ const IndexPage = () => {
               </Box>
             </SimpleGrid>
           </SimpleGrid>
-        </Box>
       </SimpleGrid>
     </>
   )

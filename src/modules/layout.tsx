@@ -95,7 +95,7 @@ const Layout = ( {children, pageContext}: Props) => {
                 <Spacer />
                 <Sidebar pageContext={pageContext} />
             </Grid>
-            <Skeleton mt="6rem" isLoaded={imgLoaded}>
+            <Skeleton maxH="40vh" mt="6rem" isLoaded={imgLoaded}>
             <Box width="100%" height="40vh" className={base.landingBg} position="relative" backgroundImage={imgUrl}>
                 <Grid columns={1} w="100%" h="40vh" display="flex" alignItems="center">
                     <Box backgroundColor={colorMode === 'light' ? 'rgba(211, 211, 211, 0.6)' : 'rgba(21, 21, 21, 0.7)'} className={base.landingBox} fontSize="3rem">
@@ -108,13 +108,12 @@ const Layout = ( {children, pageContext}: Props) => {
                 </Grid>
             </Box>
             </Skeleton>
-            <SimpleGrid>
-                <Box fontSize="1.15rem" display="block" boxSize="fit-content" px="2rem" py="2rem">
+            <SimpleGrid mt="0">
+                <Box fontSize="1.15rem" px="2rem" py="2rem">
                         {childrenWithProps}
                 </Box>
             </SimpleGrid>
-            <Spacer />
-            <Box py="3rem">
+            <Box display="flex" alignItems="end" justifyContent="center" py="3rem">
                 <Center>
                     Made with &nbsp;<FontAwesomeIcon icon={faCoffee} />&nbsp; and&nbsp;<FontAwesomeIcon color="red" icon={faHeart} />&nbsp;by&nbsp;<Link target="_blank" color="#00bfb1" href="https://github.com/chogster/portfolio">Bartu Bazna</Link>
                 </Center>

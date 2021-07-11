@@ -48,7 +48,31 @@
             }
           },
           "projects": {
-            "landingBox": "Projects"
+            "landingBox": "Projects",
+            "paragraphs": ["Gravida neque convallis a cras semper auctor neque vitae. Fermentum leo vel orci porta non pulvinar neque laoreet. Integer vitae justo eget magna fermentum iaculis eu."],
+            "projects": [
+              {
+                "title": "Lorem Ipsum",
+                "description": "Tincidunt augue interdum velit euismod in pellentesque massa placerat. Sit amet aliquam id diam maecenas ultricies mi.",
+                "technologies": ["JavaScript", "Webpack"],
+                "url": "https://elegant-khorana-044623.netlify.app",
+                "thumbnailSrc": "/images/p1.jpg"
+              },
+              {
+                "title": "Consectetur adipiscing",
+                "description": "Enim praesent elementum facilisis leo vel fringilla. Id nibh tortor id aliquet lectus proin. Risus feugiat in ante metus.",
+                "technologies": ["TypeScript", "Gatsby", "React"],
+                "url": "https://elegant-khorana-044623.netlify.app",
+                "thumbnailSrc": "/images/p2.jpg"
+              },
+              {
+                "title": "Tempus iaculis",
+                "description": "Et magnis dis parturient montes nascetur ridiculus mus mauris. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan.",
+                "technologies": ["TypeScript", "Angular", "PHP"],
+                "url": "https://elegant-khorana-044623.netlify.app",
+                "thumbnailSrc": "/images/p3.jpg"
+              }
+            ]
           },
           "404": {
             "landingBox": "Oops! This page doesn't exist."
@@ -105,7 +129,31 @@
             }
           },
           "projects": {
-            "landingBox": "Projects"
+            "landingBox": "Projects",
+            "paragraphs": ["Vestibulum morbi blandit cursus risus at ultrices mi tempus. Imperdiet sed euismod nisi porta lorem mollis aliquam. Egestas quis ipsum suspendisse ultrices gravida dictum fusce ut."],
+            "projects": [
+              {
+                "title": "Lorem Ipsum",
+                "description": "Tincidunt augue interdum velit euismod in pellentesque massa placerat. Sit amet aliquam id diam maecenas ultricies mi.",
+                "technologies": ["JavaScript", "Webpack"],
+                "url": "https://elegant-khorana-044623.netlify.app",
+                "thumbnailSrc": "/images/p1.jpg"
+              },
+              {
+                "title": "Consectetur adipiscing",
+                "description": "Enim praesent elementum facilisis leo vel fringilla. Id nibh tortor id aliquet lectus proin. Risus feugiat in ante metus.",
+                "technologies": ["TypeScript", "Gatsby", "React"],
+                "url": "https://elegant-khorana-044623.netlify.app",
+                "thumbnailSrc": "/images/p2.jpg"
+              },
+              {
+                "title": "Tempus iaculis",
+                "description": "Et magnis dis parturient montes nascetur ridiculus mus mauris. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan.",
+                "technologies": ["TypeScript", "Angular", "PHP"],
+                "url": "https://elegant-khorana-044623.netlify.app",
+                "thumbnailSrc": "/images/p3.jpg"
+              }
+            ]
           },
           "404": {
             "landingBox": "Hoppla! Diese Seite existiert nicht."
@@ -162,7 +210,31 @@
               }
             },
             "projects": {
-              "landingBox": "Projeler"
+              "landingBox": "Projeler",
+              "paragraphs": ["Donec massa sapien faucibus et molestie. Lorem ipsum dolor sit amet. Maecenas accumsan lacus vel facilisis. Neque ornare aenean euismod elementum nisi quis."],
+              "projects": [
+                {
+                  "title": "Lorem Ipsum",
+                  "description": "Tincidunt augue interdum velit euismod in pellentesque massa placerat. Sit amet aliquam id diam maecenas ultricies mi.",
+                  "technologies": ["JavaScript", "Webpack"],
+                  "url": "https://elegant-khorana-044623.netlify.app",
+                  "thumbnailSrc": "/images/p1.jpg"
+                },
+                {
+                  "title": "Consectetur adipiscing",
+                  "description": "Enim praesent elementum facilisis leo vel fringilla. Id nibh tortor id aliquet lectus proin. Risus feugiat in ante metus.",
+                  "technologies": ["TypeScript", "Gatsby", "React"],
+                  "url": "https://elegant-khorana-044623.netlify.app",
+                  "thumbnailSrc": "/images/p2.jpg"
+                },
+                {
+                  "title": "Tempus iaculis",
+                  "description": "Et magnis dis parturient montes nascetur ridiculus mus mauris. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan.",
+                  "technologies": ["TypeScript", "Angular", "PHP"],
+                  "url": "https://elegant-khorana-044623.netlify.app",
+                  "thumbnailSrc": "/images/p3.jpg"
+                }
+              ]
             },
             "404": {
               "landingBox": "Aman! Böyle bir sayfa yok."

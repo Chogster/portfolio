@@ -104,7 +104,8 @@ const Sidebar = ({pageContext}: SidebarProps) => {
 }
 
 const changeLanguageAndGoToAddress = (originalPath: string, lang: string) => {
-    navigate("/"+lang+originalPath)
+    const slug = originalPath.replace(/(.html|\/)/g, "");
+    navigate("/"+lang+"/"+slug)
 }
 
 export default Sidebar;
