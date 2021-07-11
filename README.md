@@ -11,7 +11,7 @@
 
 # Introduction
 
-This is a personal portfolio that is made using `Gatsby` and `Chakra UI`. Feel free to use it and customize it according to your own needs. [Click to see the license](LICENSE).
+This is a personal portfolio that is made using [Gatsby](https://www.gatsbyjs.com), [Chakra UI](https://chakra-ui.com/), and [i18next](https://www.i18next.com/). Feel free to use it and customize it according to your own needs. [Click to see the license](LICENSE).
 
 Use `npm run develop` to run it locally and `npm run buld` to build it.
 
@@ -34,6 +34,10 @@ These two files are very important for you to personalise your website. Please m
 In order for the contact form to work, you need to set up a form provider and use call the respective action URL for it to work. Check out gatsby building a form  [documentation](https://www.gatsbyjs.com/docs/building-a-contact-form) for more information on how to achieve this.
 
 Note: There is a placeholder function for the contact form. Remove the `onSubmit` method from the `form` tag and add your action with your provider URL.
+
+## Text, projects, content in general
+
+All of the text is taken directly from `translations.json`, so this file serves as the main source of content. In order to change the text, this file must be edited, this includes "projects" as well. 
 
 ## Netlify redirect setup
 
