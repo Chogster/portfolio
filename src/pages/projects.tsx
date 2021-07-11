@@ -1,4 +1,4 @@
-import { Box, Text, SimpleGrid, Image, Tag, TagLeftIcon, Spacer, Link } from "@chakra-ui/react";
+import { Box, Text, SimpleGrid, Image, Tag, TagLeftIcon, Link } from "@chakra-ui/react";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import SEO from "../modules/seo";
@@ -52,12 +52,12 @@ const ProjectsPage = () => {
                                 {
                                     [...project.technologies].map((tech, j) => {
                                         return (
-                                            <>
-                                                <Tag key={j} mr="2px">
+                                            <span key={j}>
+                                                <Tag mr="2px">
                                                     <TagLeftIcon as={Image} src={`/devicons/${tech.toLowerCase()}.svg`} />
                                                     {tech}
                                                 </Tag>
-                                            </>
+                                            </span>
                                         )
                                     })
                                 }

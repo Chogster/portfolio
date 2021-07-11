@@ -12,6 +12,7 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-netlify",
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -24,10 +25,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: "data",
+        path: "./src/data/",
       },
-      __key: "images",
+      __key: "jsonData",
     },
     {
       resolve: "gatsby-source-filesystem",

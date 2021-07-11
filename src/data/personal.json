@@ -1,0 +1,16 @@
+{
+    "socials": {
+        "github": "https://github.com/Chogster",
+        "email": "...",
+        "linkedin": "...",
+        "xing": "...",
+        "twitter": "..."
+    },
+    "workingHours": {
+        "timeZone":"Europe/Berlin",
+        "weekendDays": ["Sat", "Sun"],
+        "workHrBegin": [8, 30],
+        "workHrEnd": [17, 0],
+        "sleep": [23, 59]
+    }
+}

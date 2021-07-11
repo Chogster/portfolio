@@ -13,7 +13,7 @@
 
 This is a personal portfolio that is made using [Gatsby](https://www.gatsbyjs.com), [Chakra UI](https://chakra-ui.com/), and [i18next](https://www.i18next.com/). Feel free to use it and customize it according to your own needs. [Click to see the license](LICENSE).
 
-Use `npm run develop` to run it locally and `npm run buld` to build it.
+Use `npm run develop` to run it locally and `npm run build` to build it.
 
 
 
