@@ -127,13 +127,13 @@ const Sidebar = ({pageContext}: SidebarProps) => {
                     <Box width="100%" display="flex" alignItems="center" py="0.5rem;" justifyContent="center" px="2rem">
                         <Avatar size="full" name="Chogster" src="https://avatars.githubusercontent.com/u/25952454?v=4">
                             {
-                                window.innerWidth > 768 &&
+                                typeof window !== 'undefined' && window.innerWidth > 768 &&
                                 <Tooltip borderRadius="lg" fontSize="1.25rem" label={badgeTT}>
                                     <AvatarBadge borderRadius="full" mr="2rem" mb="1rem" boxSize="1.5rem" bg={badgeColour} /> 
                                 </Tooltip>
                             }
                             {
-                                window.innerWidth < 768 &&
+                                typeof window !== 'undefined' && window.innerWidth < 768 &&
                                 <Popover>
                                     <PopoverTrigger>
                                         <AvatarBadge borderColor="white" borderWidth="1px" borderRadius="full" mr="1.5rem" mb="1rem" boxSize="1.5rem" bg={badgeColour} />
