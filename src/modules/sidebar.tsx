@@ -59,7 +59,7 @@ const Sidebar = ({pageContext}: SidebarProps) => {
         
         // determine if sleeping
         if (
-            (dataJson.workingHours.sleep[0]+8 % 24 > Number(curHour) % 24) &&
+            ((dataJson.workingHours.sleep[0]+8) % 24 > Number(curHour) % 24) &&
             (dataJson.workingHours.sleep[1] > Number(curMin))
         ) {
             return "gray.400";
