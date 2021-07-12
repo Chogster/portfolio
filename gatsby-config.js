@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Bartu.me",
+    title: "Chogster",
     supportedLanguages: ["tr", "de", "en"],
     siteUrl: "http://localhost",
     defaultLanguage: "en"

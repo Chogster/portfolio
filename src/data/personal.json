@@ -11,6 +11,12 @@
         "weekendDays": ["Sat", "Sun"],
         "workHrBegin": [8, 30],
         "workHrEnd": [17, 0],
-        "sleep": [23, 59]
+        "sleep": [23, 59],
+        "tooltips": {
+            "busy": "💻💼👨‍💻",
+            "offline": "💤💤",
+            "away": "🥳⛱️",
+            "available": "👋👋"
+        }
     }
 }

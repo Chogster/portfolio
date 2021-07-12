@@ -24,7 +24,7 @@ const Navlinks = ({pageContext}: Props) => {
                     links.map((obj, i) => {
                         return (
                             <ListItem key={lang+obj.name+i+"li"}>
-                                <Link key={lang+obj.name+i+"link"} to={obj.link} className={base.navLink}
+                                <Link style={{fontSize:"1.5rem"}} key={lang+obj.name+i+"link"} to={obj.link} className={base.navLink}
                                 activeClassName={base.navLinkActive}>
                                     {obj.name}
                                 </Link>

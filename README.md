@@ -1,10 +1,5 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Bartu.me | Portfolio (Work in progress)
+  Chogster | Portfolio
 </h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9d57ddab-0044-4bb9-942f-88a93a2b9d1d/deploy-status)](https://app.netlify.com/sites/elegant-khorana-044623/deploys)
@@ -19,9 +14,15 @@ Use `npm run develop` to run it locally and `npm run build` to build it.
 
 ## 🚀 Features
 
-* Easily customizable
+* Highly customizable
 * Multiple language support
 * Dark/light mode support
+* Ready to deploy on netlify
+* Basic SEO support
+
+## Demo
+
+* Demo could be found at [netlify](https://elegant-khorana-044623.netlify.app) or [my website](https://bartu.me)
 
 # Documentation
 
@@ -38,6 +39,16 @@ Note: There is a placeholder function for the contact form. Remove the `onSubmit
 ## Text, projects, content in general
 
 All of the text is taken directly from `translations.json`, so this file serves as the main source of content. In order to change the text, this file must be edited, this includes "projects" as well. 
+
+## Social links, activity hours
+
+As a little addition, I put a small "activity badge" next to the avatar. The colour and the tooltip of this badge changes according to the day of the week, and time of the day. You can change the time, days, and the tooltips for this feature in `src/data/personal.json`. For reference, the badge is <span style="color: orange">orange</span>, when it's the weekend, <span style="color: green">green</span> when you're available (not working, not sleeping, and it's not the weekend), <span style="color:red">red</span> when you're working, and <span style="color:gray">gray</span> when you're asleep. I set the sleeping duration to 8 hours by default, but you can change this in `sidebar.tsx` as well.
+
+You can also add links to your social media accounts in `src/data/personal.json`, and leave them as an empty string if you want them hidden.
+
+## Further component customisation
+
+The current dark/light mode themes are already partially customised. You can check out `chakra.config.ts` to see overriden styles. If you want to customise the theme further, please look at [Chakra UI github repo](https://github.com/chakra-ui/chakra-ui/tree/main/packages/theme/src) and [Chakra UI documentation](https://chakra-ui.com/docs/theming/customize-theme).
 
 ## Netlify redirect setup
 
@@ -62,11 +73,11 @@ All of the text is taken directly from `translations.json`, so this file serves 
 
   ...
 
-	error_page 404 /404;
-	location = /404 {
-		set $fof "YOUR_WEBSITE_ADDRESS${lang}/404";
-		return 301 $fof;
-	}
+  error_page 404 /404;
+  location = /404 {
+    set $fof "YOUR_WEBSITE_ADDRESS${lang}/404";
+    return 301 $fof;
+  }
 ```
 
 # Credits
@@ -74,5 +85,3 @@ All of the text is taken directly from `translations.json`, so this file serves 
 * Illustrations are done by [Katerina Limpitsouni](https://undraw.co)
 * Images are from [Fernando Hernandez](https://unsplash.com/photos/efzwcMRM6j4), [AltumCode](https://unsplash.com/photos/dC6Pb2JdAqs), [Quino Al](https://unsplash.com/photos/4SNUcHPiC8c), [Sigmund](https://unsplash.com/photos/HsTnjCVQ798), [Ethan Sykes](https://unsplash.com/photos/iISyBKOT2D0)
 * Tag icons are from [devicons](https://github.com/devicons/devicon). Download and add the icons you want to use to `static/devicons`.
-
-More will be added here...

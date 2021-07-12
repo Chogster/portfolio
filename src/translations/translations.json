@@ -2,7 +2,7 @@
     "en": {
       "translation": {
         "siteMetadata": {
-          "title": "Bartu.me | Portfolio",
+          "title": "Chogster | Portfolio",
           "menuLinks": {
             "links": [
                 {
@@ -75,7 +75,8 @@
             ]
           },
           "404": {
-            "landingBox": "Oops! This page doesn't exist."
+            "landingBox": "Oops! This page doesn't exist.",
+            "paragraphs": "Amet tellus cras adipiscing enim eu. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Suscipit adipiscing bibendum est ultricies integer quis auctor. Neque viverra justo nec ultrices dui."
           }
         }
       }
@@ -83,7 +84,7 @@
     "de": {
       "translation": {
         "siteMetadata": {
-          "title": "Bartu.me | Portfolio",
+          "title": "Chogster | Portfolio",
           "menuLinks": {
             "links": [
                 {
@@ -156,7 +157,8 @@
             ]
           },
           "404": {
-            "landingBox": "Hoppla! Diese Seite existiert nicht."
+            "landingBox": "Hoppla! Diese Seite existiert nicht.",
+            "paragraphs": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           }
         }
       }
@@ -164,7 +166,7 @@
     "tr": {
         "translation": {
           "siteMetadata": {
-            "title": "Bartu.me | Portfolyo",
+            "title": "Chogster | Portfolyo",
             "menuLinks": {
               "links": [
                   {
@@ -237,7 +239,8 @@
               ]
             },
             "404": {
-              "landingBox": "Aman! Böyle bir sayfa yok."
+              "landingBox": "Aman! Böyle bir sayfa yok.",
+              "paragraphs": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             }
           }
         }
