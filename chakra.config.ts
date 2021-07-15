@@ -78,6 +78,41 @@ const components: ThemeComponents = {
                 }
             }
         })
+    },
+    Input: {
+        baseStyle: (props) => ({
+            field: {
+                _hover: {
+                    boxShadow: mode('0 0 0 1px rgba(21, 21, 21, 0.6)', '0 0 0 1px rgba(255, 255, 255, 0.6)')(props),
+                    borderColor: mode('#151515', 'white')(props)
+                },
+                _focus: {
+                    boxShadow: mode('0 0 0 1px rgba(21, 21, 21, 0.6)', '0 0 0 1px rgba(255, 255, 255, 0.6)')(props),
+                    border: mode('1px solid #151515', '1px solid white')(props),
+                }
+            },
+            addon: {
+
+            }
+        }),
+        defaultProps:{
+            focusBorderColor: mode('0 0 0 1px rgba(21, 21, 21, 0.6)', '0 0 0 1px rgba(255, 255, 255, 0.6)')
+        }
+    },
+    Textarea: {
+        baseStyle: (props) => ({
+            _focus: {
+                boxShadow: mode('0 0 0 1px rgba(21, 21, 21, 0.6)', '0 0 0 1px rgba(255, 255, 255, 0.6)')(props),
+                border: mode('1px solid #151515', '1px solid white')(props),
+            },
+            _hover: {
+                boxShadow: mode('0 0 0 1px rgba(21, 21, 21, 0.6)', '0 0 0 1px rgba(255, 255, 255, 0.6)')(props),
+                borderColor: mode('#151515', 'white')(props)
+            },  
+        }),
+        defaultProps:{
+            focusBorderColor: mode('0 0 0 1px rgba(21, 21, 21, 0.6)', '0 0 0 1px rgba(255, 255, 255, 0.6)')
+        }
     }
 }
 

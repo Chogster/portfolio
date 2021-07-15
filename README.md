@@ -50,6 +50,20 @@ You can also add links to your social media accounts in `src/data/personal.json`
 
 The current dark/light mode themes are already partially customised. You can check out `chakra.config.ts` to see overriden styles. If you want to customise the theme further, please look at [Chakra UI github repo](https://github.com/chakra-ui/chakra-ui/tree/main/packages/theme/src) and [Chakra UI documentation](https://chakra-ui.com/docs/theming/customize-theme).
 
+## Adding links and other custom components to translations
+
+It is possible to add links and custom components to your translations. You must give an index and use it in the following way:
+
+```
+// translations.json
+"termsAcceptedLabel": "I have read and accepted the <0>terms</0>"
+
+// .tsx file
+<Trans components={[<Link href="YOUR_LINK" />]} t={t} i18nKey="termsAcceptedLabel" />
+```
+
+More on this could be found at [react i18next documentation](https://react.i18next.com/latest/trans-component)
+
 ## Netlify redirect setup
 
 * By default there are redirects in place thanks to `gatsby-plugin-netlify`, however 404 redirects didn't seem to work. Therefore, I added some default `_redirects` inside `static` folder for 404 handling.
