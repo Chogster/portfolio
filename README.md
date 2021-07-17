@@ -1,3 +1,6 @@
+<p align="center">
+  <img alt="Gatsby" src="static/icon/icon.png" width="60" />
+</p>
 <h1 align="center">
   Chogster | Portfolio
 </h1>
@@ -96,6 +99,7 @@ More on this could be found at [react i18next documentation](https://react.i18ne
 
 # Credits
 
-* Illustrations are done by [Katerina Limpitsouni](https://undraw.co)
-* Images are from [Fernando Hernandez](https://unsplash.com/photos/efzwcMRM6j4), [AltumCode](https://unsplash.com/photos/dC6Pb2JdAqs), [Quino Al](https://unsplash.com/photos/4SNUcHPiC8c), [Sigmund](https://unsplash.com/photos/HsTnjCVQ798), [Ethan Sykes](https://unsplash.com/photos/iISyBKOT2D0)
+* Illustrations are done by [Katerina Limpitsouni](https://undraw.co).
+* Images are from [Fernando Hernandez](https://unsplash.com/photos/efzwcMRM6j4), [AltumCode](https://unsplash.com/photos/dC6Pb2JdAqs), [Quino Al](https://unsplash.com/photos/4SNUcHPiC8c), [Sigmund](https://unsplash.com/photos/HsTnjCVQ798), [Ethan Sykes](https://unsplash.com/photos/iISyBKOT2D0).
 * Tag icons are from [devicons](https://github.com/devicons/devicon). Download and add the icons you want to use to `static/devicons`.
+* Favicon license can be found in `static/icon` folder.

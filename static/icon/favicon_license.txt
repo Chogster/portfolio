@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Playball
+- Font Author: Copyright (c) 2011 TypeSETit, LLC (typesetit@att.net), with Reserved Font Name "Playball"
+- Font Source: http://fonts.gstatic.com/s/playball/v10/TK3gWksYAxQ7jbsKcj8Dl-tPKo2t.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)

@@ -13,12 +13,6 @@ module.exports = {
     "gatsby-plugin-netlify",
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-json",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/icon.png",
-      },
-    },
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
@@ -60,6 +54,18 @@ module.exports = {
         langKeyForNull: 'en',
         useLangKeyLayout: false
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Chogster | Portfolio`,
+        short_name: `Chogster`,
+        start_url: `/`,
+        background_color: `#151515`,
+        theme_color: `#151515`,
+        display: `standalone`,
+        icon: `static/icon/icon.png`
+      },
+    },
   ],
 };
