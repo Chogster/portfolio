@@ -61,7 +61,7 @@
               {
                 "title": "Consectetur adipiscing",
                 "description": "Enim praesent elementum facilisis leo vel fringilla. Id nibh tortor id aliquet lectus proin. Risus feugiat in ante metus.",
-                "technologies": ["TypeScript", "Gatsby", "React"],
+                "technologies": ["TypeScript", "Gatsby", "React.js"],
                 "url": "https://elegant-khorana-044623.netlify.app",
                 "thumbnailSrc": "/images/p2.jpg"
               },
@@ -99,7 +99,7 @@
                   "description": "Sie können meine Kontaktinformationen hier finden."
                 },
                 {
-                  "name": "Projekten",
+                  "name": "Projekte",
                   "link": "/de/projects",
                   "description": "Einige meiner Projekte."
                 }
@@ -144,7 +144,7 @@
               {
                 "title": "Consectetur adipiscing",
                 "description": "Enim praesent elementum facilisis leo vel fringilla. Id nibh tortor id aliquet lectus proin. Risus feugiat in ante metus.",
-                "technologies": ["TypeScript", "Gatsby", "React"],
+                "technologies": ["TypeScript", "Gatsby", "React.js"],
                 "url": "https://elegant-khorana-044623.netlify.app",
                 "thumbnailSrc": "/images/p2.jpg"
               },
@@ -227,7 +227,7 @@
                 {
                   "title": "Consectetur adipiscing",
                   "description": "Enim praesent elementum facilisis leo vel fringilla. Id nibh tortor id aliquet lectus proin. Risus feugiat in ante metus.",
-                  "technologies": ["TypeScript", "Gatsby", "React"],
+                  "technologies": ["TypeScript", "Gatsby", "React.js"],
                   "url": "https://elegant-khorana-044623.netlify.app",
                   "thumbnailSrc": "/images/p2.jpg"
                 },
