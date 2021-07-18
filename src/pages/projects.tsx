@@ -23,7 +23,7 @@ const ProjectsPage = () => {
                 <Box w="100%" textAlign="center" display="block" mb="1rem">
                     <Image w="100%" style={{marginLeft:"auto", marginRight:"auto", height:"18vh"}} src="/illustrations/undraw_maker.svg" />
                 </Box>
-                <Box w="100%" boxSize="fit-content" py="1rem">
+                <Box w="100%" boxSize="fit-content" py="2rem">
                 {
                     [...paragraphs].map((paragraph, i) => {
                         return (

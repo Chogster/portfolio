@@ -47,7 +47,7 @@ const ContactPage = () => {
                 <Box w="100%" textAlign="center" display="block" mb="1rem">
                     <Image style={{marginLeft:"auto", marginRight:"auto", height:"18vh"}} src="/illustrations/undraw_time.svg" />
                 </Box>
-                <Box boxSize="fit-content" mb="1rem">
+                <Box py="2rem" boxSize="fit-content" mb="1rem">
                     <>
                         {
                             [...paragraphs].map((paragraph, i) => {
@@ -67,7 +67,7 @@ const ContactPage = () => {
                 <Box w="100%" textAlign="center" display="block" mb="1rem">
                     <Image style={{marginLeft:"auto", marginRight:"auto", height:"18vh"}} src="/illustrations/undraw_chat.svg" />
                 </Box>
-                <Box display="block" w="100%">
+                <Box py="2rem" display="block" w="100%">
                     <form onSubmit={formik.handleSubmit} method="POST">
                         <FormControl isRequired>
                             <FormLabel>{t('pages.contact.form.nameLabel')}</FormLabel>
@@ -82,11 +82,11 @@ const ContactPage = () => {
                             <Textarea name="message" onChange={formik.handleChange} value={formik.values.message} required />
                             <FormHelperText>{t('pages.contact.form.messageHelper')}</FormHelperText>
                         </FormControl>
-                        <FormControl isRequired>
+                        <FormControl mt="1rem" isRequired>
                             <Checkbox onChange={formik.handleChange} value={formik.values.termsAccepted} name="termsAccepted" isRequired>{t('pages.contact.form.termsAcceptedLabel')}</Checkbox>
                         </FormControl>
                         <Center>
-                        <Button disabled={!formik.isValid} type="submit">
+                        <Button mt="1rem" disabled={!formik.isValid} type="submit">
                             {t('pages.contact.form.submitLabel')}
                         </Button>
                         </Center>

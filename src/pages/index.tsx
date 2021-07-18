@@ -19,7 +19,7 @@ const IndexPage = () => {
             <Box w="100%" textAlign="center" display="block" mb="1rem">
               <Image style={{marginLeft:"auto", marginRight:"auto", height:"18vh"}} src="/illustrations/undraw_working.svg" />
             </Box>
-            <Box boxSize="fit-content">
+            <Box py="2rem" boxSize="fit-content">
               {
                 [...paragraphs].map((paragraph, i) => {
                   return (
@@ -37,7 +37,7 @@ const IndexPage = () => {
               <Box w="100%" textAlign="center" display="block" mb="1rem">
                 <Image style={{marginLeft:"auto", marginRight:"auto", height:"18vh"}} src="/illustrations/undraw_winter_walk.svg" />
               </Box>
-              <Box boxSize="fit-content">
+              <Box py="2rem" boxSize="fit-content">
                 {
                   [...hobbies].map((paragraph, i) => {
                     return (
@@ -54,7 +54,7 @@ const IndexPage = () => {
               <Box w="100%" textAlign="center" display="block" mb="1rem">
                 <Image style={{marginLeft:"auto", marginRight:"auto", height:"18vh"}} src="/illustrations/undraw_certificate.svg" />
               </Box>
-              <Box boxSize="fit-content">
+              <Box py="2rem" boxSize="fit-content">
                 {[...skillTexts].map((text, i) => {
                     return (
                       <Box key={i}>
@@ -64,6 +64,7 @@ const IndexPage = () => {
                     )
                   }
                 )}
+                <br />
                 {
                   [...skills].map((skill, i) => {
                     return (
